@@ -1,0 +1,110 @@
+                    /* Mobile & Tablet */
+                    
+                    @media screen and (max-width: 1024px) {
+                        html {
+                            font-size: 75%;
+                        }
+                        .menu {
+                            display: none
+                        }
+                        .menu__list-menu {
+                            display: none;
+                        }
+                        .nav__mobile__btn {
+                            display: block;
+                        }
+                        .slider {
+                            width: 100%;
+                        }
+                        #slider__img {
+                            width: 100%;
+                        }
+                        .title {
+                            width: 100%;
+                        }
+                        .content {
+                            width: 100%;
+                        }
+                        .content__item {
+                            width: 100%;
+                            flex-direction: column;
+                        }
+                        .content__item-img {
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .item__img {
+                            width: 100%;
+                        }
+                        .content__item-text {
+                            width: 100%;
+                        }
+                        .social {
+                            width: 100%;
+                            margin-top: 2%;
+                        }
+                        .last-banner {
+                            width: 100%;
+                        }
+                        #last-banner__img {
+                            width: 100%;
+                        }
+                        .footer {
+                            width: 100%;
+                            margin-top: 5%;
+                        }
+                    }
+                    /* Mobile */
+                    
+                    @media (max-width:739px) {
+                        .header {
+                            display: flex;
+                        }
+                        .header__logo {
+                            margin: auto;
+                        }
+                        .content__item-text {
+                            padding: 0 5%;
+                        }
+                        .content__item-title {
+                            margin-top: 10%;
+                        }
+                        .content__item-description {
+                            text-align: justify;
+                        }
+                        .social {
+                            width: 100%;
+                            margin: 5% 0 5% 0;
+                        }
+                        .last-banner {
+                            width: 100%;
+                            margin: 0;
+                        }
+                        #last-banner__img {
+                            width: 100%;
+                        }
+                    }
+                    /* Tablet */
+                    
+                    @media (min-width:740px) and (max-width:1023px) {
+                        .social {
+                            width: 100%;
+                            margin: 5% 0 5% 0;
+                        }
+                        .content__item-text {
+                            padding: 0 5%;
+                        }
+                        .content__item-title {
+                            margin-top: 15%;
+                        }
+                        .content__item-description {
+                            text-align: justify;
+                        }
+                        .last-banner {
+                            margin: 0;
+                        }
+                    }
+                    /* PC */
+                    
+                    @media screen and (min-width:1024px) and (max-width:1240px) {}
