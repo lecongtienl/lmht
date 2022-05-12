@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienlcph26838 - LAB1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ASSETS/FONT/css/all.min.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="reponsive.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <img src="IMG/image 20.png" alt="" class="header__logo">
+        </header>
+        <div class="grid wide">
+            <nav class="menu ">
+                <ul class="menu__list-menu ">
+                    <li class="menu__item-menu ">
+                        <a href="" class="menu__link-menu">Game</a>
+                    </li>
+                    <li class="menu__item-menu">
+                        <a href="" class="menu__link-menu">Champions</a>
+                    </li>
+                    <li class="menu__item-menu">
+                        <a href="" class="menu__link-menu">News</a>
+                    </li>
+                    <li class="menu__item-menu">
+                        <a href="" class="menu__link-menu">Patch Notes</a>
+                    </li>
+                    <li class="menu__item-menu">
+                        <a href="" class="menu__link-menu">Discover</a>
+                    </li>
+                    <li class="menu__item-menu">
+                        <a href="" class="menu__link-menu">Esports</a>
+                    </li>
+                    <li class="menu__item-menu">
+                        <a href="" class="menu__link-menu">Universe</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Nav Mobile -->
+
+            <label for="nav-mobile-display" class="nav__mobile__btn">
+                <i class="ti-menu"></i>
+            </label>
+            <!-- for ở label gọi đến id ở input nav-mobile-display , chỉ cần click vô label là check dc box -->
+            <input type="checkbox" id="nav-mobile-display">
+            <!-- sau đó css #nav-mobile-display:checked~.nav__overlay để click vào thì hiện lớp phủ -->
+            <label for="nav-mobile-display" class="nav__overlay"></label>
+            <!-- for ở label này khi ấn bừa vào lớp phủ thì sẽ tắt hiển thị lớp phủ và menu (checkbox lần thứ 2 sẽ bỏ tích) -->
+            <nav class="nav__mobile">
+                <label for="nav-mobile-display">
+                    <i class="ti-close"></i>
+                </label>
+                <ul class="nav__mobile__list">
+                    <li>
+                        <a href="" class="nav__mobile__link">Game</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile__link">Champions</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile__link">News</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile__link">Patch Notes</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile__link">Discover</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile__link">Esports</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile__link">Universe</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="slider ">
+            <img id="slider__img" src="IMG/banner.jpg" alt="">
+        </div>
+        <div class="title">
+            <h1 class="title__big">DIANA</h1>
+            <p class="title__small">SCORN OF THE MOON</p>
+        </div>
+        <div class="content">
+            <div class="content__item">
+                <div class="content__item-img">
+                    <img class="item__img" src="IMG/item.png" alt="">
+                </div>
+                <div class="content__item-text">
+                    <h1 class="content__item-title">MOONSILVER BLADE</h1>
+                    <p class="content__item-description">Every third strike cleaves nearby enemies for an additional magic damage. After casting a spell, Diana gains Attack Speed for her next 3 attacks.</p>
+                </div>
+            </div>
+            <div class="content__item ">
+                <div class="content__item-img">
+                    <img class="item__img" src="IMG/item2.jpg" alt="">
+                </div>
+                <div class="content__item-text">
+                    <h1 class="content__item-title">MOONFALL</h1>
+                    <p class="content__item-description">Diana reveals and draws in all nearby enemies and slows them. If Diana pulls in one or more enemy champions, the moonlight crashes down onto her after ashort delay, dealing magic damage in an area around her, increased for each target
+                        beyond the first pulled.</p>
+                </div>
+            </div>
+        </div>
+        <div class="social ">
+            <h1 class="social__title">Check out our other social channels</h1>
+        </div>
+        <div class="last-banner">
+            <img id="last-banner__img" src="IMG/last-banner.jpg" alt="">
+        </div>
+        <footer class="footer">© 2021 All Rights Reserved</footer>
+    </div>
+
+    <script>
+        var slider = document.getElementsById('slider__img');
+        var img = ["IMG/banner.jpg", "IMG/banner-hover-1.jpg", "IMG/item.png", "IMG/item2.jpg", "IMG/last-banner.jpg"];
+        var count = 0;
+
+        function sliderPlay() {
+            setInterval(function() {
+                count++;
+                if (count >= img.length) {
+                    count = 0;
+                }
+                slider.src = img[count];
+            }, 1000);
+        }
+        sliderPlay();
+    </script>
+</body>
+
+</html>
